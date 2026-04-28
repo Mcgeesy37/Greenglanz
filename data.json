@@ -1,0 +1,130 @@
+{
+  "firma": {
+    "name": "Greenglanz Reinigungsservice GmbH",
+    "slogan": "Reinheit trifft Verantwortung",
+    "gruendungsjahr": 2010,
+    "mitarbeiter": 80,
+    "zertifikate": ["ISO 14001", "Blauer Engel", "EU Ecolabel", "BSRIA"],
+    "kontakt": {
+      "adresse": "Musterstraße 12, 10115 Berlin",
+      "telefon": "+49 30 1234567",
+      "email": "info@greenglanz.de",
+      "oeffnungszeiten": "Mo–Fr 08:00–18:00 Uhr"
+    },
+    "social": {
+      "instagram": "https://instagram.com/greenglanz",
+      "linkedin": "https://linkedin.com/company/greenglanz",
+      "facebook": "https://facebook.com/greenglanz"
+    }
+  },
+  "leistungen": [
+    {
+      "id": "buero",
+      "icon": "🏢",
+      "titel": "Büroreinigung",
+      "beschreibung": "Tägliche und periodische Reinigung Ihrer Büroflächen – diskret, gründlich und termingerecht.",
+      "features": [
+        "Flexible Reinigungsintervalle",
+        "Öko-zertifizierte Reinigungsmittel",
+        "Geschultes Fachpersonal",
+        "Digitales Qualitätsprotokoll"
+      ]
+    },
+    {
+      "id": "gebaeude",
+      "icon": "🏗️",
+      "titel": "Gebäudereinigung",
+      "beschreibung": "Komplette Außen- und Innenreinigung von Gewerbeimmobilien, Wohnanlagen und Industrieobjekten.",
+      "features": [
+        "Fassaden- und Glasreinigung",
+        "Tiefenreinigung aller Bereiche",
+        "Sonderreinigungen nach Bedarf",
+        "Langfristige Wartungsverträge"
+      ]
+    },
+    {
+      "id": "fenster",
+      "icon": "✨",
+      "titel": "Fensterreinigung",
+      "beschreibung": "Streifenfreie Sauberkeit für Glasflächen jeder Größe – auch in großen Höhen mit modernster Technik.",
+      "features": [
+        "Osmosewasser-Reinigungsverfahren",
+        "Abseilarbeiten & Hebebühnen",
+        "Rahmen und Dichtungen inklusive",
+        "Witterungsunabhängig planbar"
+      ]
+    },
+    {
+      "id": "unterhalts",
+      "icon": "🔄",
+      "titel": "Unterhaltsreinigung",
+      "beschreibung": "Regelmäßige Pflege Ihrer Räumlichkeiten nach individuellem Plan – verlässlich und kosteneffizient.",
+      "features": [
+        "Tägliche, wöchentliche oder monatliche Reinigung",
+        "Individuelle Reinigungspläne",
+        "Festpreisgarantie",
+        "Notfalldienst verfügbar"
+      ]
+    },
+    {
+      "id": "teppich",
+      "icon": "🧹",
+      "titel": "Teppich- & Polsterreinigung",
+      "beschreibung": "Professionelle Tiefenreinigung für Teppiche, Polster und textile Bodenbeläge mit schonenden Methoden.",
+      "features": [
+        "Heißwasserextraktion",
+        "Allergikerfreundliche Reinigung",
+        "Flecken- und Geruchsbeseitigung",
+        "Schnelltrocknungsverfahren"
+      ]
+    },
+    {
+      "id": "sonder",
+      "icon": "⚡",
+      "titel": "Sonder- & Grundreinigung",
+      "beschreibung": "Einmalige Tiefenreinigung nach Umzug, Renovation oder bei besonderen Anforderungen.",
+      "features": [
+        "Bauendreinigung",
+        "After-Event-Reinigung",
+        "Renovierungsreinigung",
+        "Desinfektion & Hygienesanierung"
+      ]
+    }
+  ],
+  "nachhaltigkeit": {
+    "co2_neutral": true,
+    "oekostrom": true,
+    "elektrofahrzeuge": true,
+    "wasserersparnis_prozent": 60,
+    "energiersparnis_prozent": 40,
+    "verpackung": "100% recycelbar",
+    "produkte_zertifiziert": ["Blauer Engel", "EU Ecolabel", "OECD 301B biologisch abbaubar"]
+  },
+  "stats": {
+    "kunden": 1200,
+    "mitarbeiter": 80,
+    "erfahrung_jahre": 15,
+    "bewertung": 4.9,
+    "projekte_gesamt": 18500
+  },
+  "bewertungen": [
+    {
+      "name": "Maria K.",
+      "position": "Facility-Managerin, Klinikum Süd",
+      "text": "Greenglanz hat unsere Erwartungen weit übertroffen. Nicht nur die Qualität ist hervorragend – auch das Nachhaltigkeitsbewusstsein hat uns überzeugt.",
+      "sterne": 5
+    },
+    {
+      "name": "Thomas W.",
+      "position": "Geschäftsführer, TechPark GmbH",
+      "text": "Pünktlich, professionell, und die Büros glänzen wie nie zuvor. Seit 5 Jahren unser verlässlicher Partner.",
+      "sterne": 5
+    },
+    {
+      "name": "Sandra M.",
+      "position": "Hoteldirektorin, Hotel Bergblick",
+      "text": "Für ein Hotel ist Hygiene alles. Greenglanz liefert konstant höchste Qualität – und das mit grünem Gewissen.",
+      "sterne": 5
+    }
+  ]
+}
