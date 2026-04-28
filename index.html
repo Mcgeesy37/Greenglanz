@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Greenglanz – Nachhaltige Reinigung</title>
+  <meta name="description" content="Greenglanz – Professionelle und umweltschonende Reinigungsdienstleistungen. Sauberkeit mit Verantwortung." />
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Particle Canvas -->
+
+<canvas id="particles"></canvas>
+
+  <!-- Navigation -->
+
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-leaf">✦</span>
+        <span class="logo-text">Greenglanz</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#leistungen">Leistungen</a></li>
+        <li><a href="#nachhaltigkeit">Nachhaltigkeit</a></li>
+        <li><a href="#ueber-uns">Über uns</a></li>
+        <li><a href="#kontakt" class="nav-cta">Anfrage senden</a></li>
+      </ul>
+      <button class="burger" id="burger" aria-label="Menü">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#leistungen">Leistungen</a></li>
+      <li><a href="#nachhaltigkeit">Nachhaltigkeit</a></li>
+      <li><a href="#ueber-uns">Über uns</a></li>
+      <li><a href="#kontakt">Anfrage senden</a></li>
+    </ul>
+  </div>
+
+  <!-- Hero -->
+
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="hero-orb orb-1"></div>
+      <div class="hero-orb orb-2"></div>
+      <div class="hero-orb orb-3"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge reveal">
+        <span class="badge-dot"></span>
+        Zertifiziert nachhaltig · Seit 2010
+      </div>
+      <h1 class="hero-title reveal reveal-delay-1">
+        Reinheit trifft<br />
+        <em>Verantwortung</em>
+      </h1>
+      <p class="hero-sub reveal reveal-delay-2">
+        Professionelle Gebäudereinigung mit 100% umweltschonenden Mitteln.<br />
+        Für Unternehmen, die Qualität und Nachhaltigkeit schätzen.
+      </p>
+      <div class="hero-actions reveal reveal-delay-3">
+        <a href="#kontakt" class="btn-primary">Kostenloses Angebot</a>
+        <a href="#leistungen" class="btn-ghost">Leistungen entdecken →</a>
+      </div>
+      <div class="hero-stats reveal reveal-delay-4">
+        <div class="stat">
+          <span class="stat-num" data-target="1200">0</span>+
+          <span class="stat-label">Zufriedene Kunden</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="100">0</span>%
+          <span class="stat-label">Öko-Reinigungsmittel</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="15">0</span>+
+          <span class="stat-label">Jahre Erfahrung</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual reveal reveal-delay-2">
+      <div class="hero-card-wrap">
+        <div class="hero-card">
+          <div class="card-inner">
+            <div class="card-icon">🌿</div>
+            <div class="card-line"></div>
+            <p class="card-text">CO₂-neutraler Betrieb</p>
+          </div>
+        </div>
+        <div class="hero-card card-2">
+          <div class="card-inner">
+            <div class="card-icon">✓</div>
+            <div class="card-line"></div>
+            <p class="card-text">ISO 14001 zertifiziert</p>
+          </div>
+        </div>
+        <div class="hero-card card-3">
+          <div class="card-inner">
+            <div class="card-icon">💧</div>
+            <div class="card-line"></div>
+            <p class="card-text">60% weniger Wasserverbrauch</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- Trust Bar -->
+
+  <section class="trust-bar">
+    <div class="trust-inner">
+      <span class="trust-label">Vertrauen von</span>
+      <div class="trust-logos">
+        <span>Muster AG</span>
+        <span>Stadtwerke GmbH</span>
+        <span>Klinikum Süd</span>
+        <span>Hotel Bergblick</span>
+        <span>TechPark GmbH</span>
+        <span>Bauhaus Center</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Leistungen -->
+
+  <section class="section leistungen" id="leistungen">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Leistungen</span>
+        <h2 class="section-title reveal">Was wir für Sie tun</h2>
+        <p class="section-sub reveal">Maßgeschneiderte Reinigungslösungen für jede Anforderung –<br />stets umweltbewusst und professionell ausgeführt.</p>
+      </div>
+      <div class="services-grid" id="servicesGrid">
+        <!-- Filled by JS from data.json -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Nachhaltigkeit -->
+
+  <section class="section nachhaltigkeit" id="nachhaltigkeit">
+    <div class="container">
+      <div class="nachhaltig-wrap">
+        <div class="nachhaltig-visual">
+          <div class="eco-ring">
+            <div class="eco-ring-inner">
+              <span class="eco-big-icon">🌍</span>
+              <p>Unser Planet<br />kommt zuerst</p>
+            </div>
+          </div>
+          <div class="eco-badges">
+            <div class="eco-badge b1">♻️ 100% recycelbare Verpackungen</div>
+            <div class="eco-badge b2">🌿 Biologisch abbaubare Mittel</div>
+            <div class="eco-badge b3">☀️ Ökostrom-Betrieb</div>
+            <div class="eco-badge b4">🚗 Elektrofahrzeuge</div>
+          </div>
+        </div>
+        <div class="nachhaltig-text">
+          <span class="section-tag">Nachhaltigkeit</span>
+          <h2 class="section-title reveal">Sauberkeit ohne<br /><em>Kompromisse</em></h2>
+          <p class="reveal">Wir glauben: Ein sauberes Gebäude darf keinen schmutzigen Fußabdruck hinterlassen. Deshalb arbeiten wir ausschließlich mit geprüften, umweltfreundlichen Reinigungsmitteln und setzen auf ressourcenschonende Prozesse.</p>
+          <div class="eco-list reveal">
+            <div class="eco-item">
+              <div class="eco-icon-wrap">🧪</div>
+              <div>
+                <strong>Zertifizierte Öko-Produkte</strong>
+                <p>Alle Reinigungsmittel tragen das Blaue-Engel- oder EU-Ecolabel-Siegel.</p>
+              </div>
+            </div>
+            <div class="eco-item">
+              <div class="eco-icon-wrap">💡</div>
+              <div>
+                <strong>Energieeffiziente Geräte</strong>
+                <p>Unsere Maschinen verbrauchen bis zu 40% weniger Strom als Standardgeräte.</p>
+              </div>
+            </div>
+            <div class="eco-item">
+              <div class="eco-icon-wrap">📦</div>
+              <div>
+                <strong>Zero-Waste-Konzept</strong>
+                <p>Nachfüllsysteme und Mehrwegbehälter minimieren unseren Verpackungsabfall.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Prozess -->
+
+  <section class="section prozess">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">So arbeiten wir</span>
+        <h2 class="section-title reveal">Ihr Weg zu<br />makellosem Ergebnis</h2>
+      </div>
+      <div class="prozess-steps">
+        <div class="prozess-step reveal">
+          <div class="step-num">01</div>
+          <h3>Erstgespräch</h3>
+          <p>Kostenlose Bedarfsanalyse und persönliche Beratung – vor Ort oder per Videocall.</p>
+        </div>
+        <div class="prozess-arrow">→</div>
+        <div class="prozess-step reveal reveal-delay-1">
+          <div class="step-num">02</div>
+          <h3>Maßgeschneidertes Angebot</h3>
+          <p>Transparentes Festpreisangebot, abgestimmt auf Ihre Räumlichkeiten und Anforderungen.</p>
+        </div>
+        <div class="prozess-arrow">→</div>
+        <div class="prozess-step reveal reveal-delay-2">
+          <div class="step-num">03</div>
+          <h3>Professionelle Reinigung</h3>
+          <p>Unser geschultes Team arbeitet diskret, zuverlässig und mit zertifizierten Öko-Mitteln.</p>
+        </div>
+        <div class="prozess-arrow">→</div>
+        <div class="prozess-step reveal reveal-delay-3">
+          <div class="step-num">04</div>
+          <h3>Qualitätskontrolle</h3>
+          <p>Abnahme mit digitalem Protokoll. Ihre Zufriedenheit ist unsere Garantie.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Über uns -->
+
+  <section class="section ueber-uns" id="ueber-uns">
+    <div class="container">
+      <div class="ueber-wrap">
+        <div class="ueber-text">
+          <span class="section-tag">Über Greenglanz</span>
+          <h2 class="section-title reveal">Menschen die<br /><em>Werte leben</em></h2>
+          <p class="reveal">Gegründet 2010 mit einer einfachen Überzeugung: Professionelle Reinigung und Umweltbewusstsein schließen sich nicht aus – sie ergänzen sich. Heute sind wir stolz, über 1.200 Kunden in der Region zu betreuen.</p>
+          <p class="reveal">Unser Team aus mehr als 80 ausgebildeten Fachkräften verbindet handwerkliche Exzellenz mit einem echten Umweltgewissen.</p>
+          <div class="ueber-zahlen reveal">
+            <div class="uz">
+              <strong>80+</strong>
+              <span>Mitarbeiter:innen</span>
+            </div>
+            <div class="uz">
+              <strong>15</strong>
+              <span>Jahre Erfahrung</span>
+            </div>
+            <div class="uz">
+              <strong>4.9★</strong>
+              <span>Kundenbewertung</span>
+            </div>
+          </div>
+        </div>
+        <div class="ueber-visual reveal">
+          <div class="testimonial-card">
+            <p class="testimonial-text">"Greenglanz hat unsere Erwartungen weit übertroffen. Nicht nur die Qualität der Arbeit ist hervorragend – auch das Bewusstsein für Nachhaltigkeit hat uns überzeugt."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">MK</div>
+              <div>
+                <strong>Maria K.</strong>
+                <span>Facility-Managerin, Klinikum Süd</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card tc-2">
+            <p class="testimonial-text">"Pünktlich, professionell, und die Büros glänzen wie nie zuvor. Seit 5 Jahren unser verlässlicher Partner."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">TW</div>
+              <div>
+                <strong>Thomas W.</strong>
+                <span>Geschäftsführer, TechPark GmbH</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontakt -->
+
+  <section class="section kontakt" id="kontakt">
+    <div class="container">
+      <div class="kontakt-wrap">
+        <div class="kontakt-text">
+          <span class="section-tag">Kontakt</span>
+          <h2 class="section-title reveal">Starten wir<br /><em>gemeinsam</em></h2>
+          <p class="reveal">Fordern Sie jetzt Ihr unverbindliches und kostenloses Angebot an. Wir melden uns innerhalb von 24 Stunden bei Ihnen.</p>
+          <div class="kontakt-info reveal">
+            <div class="kinfo">📍 Musterstraße 12, 10115 Berlin</div>
+            <div class="kinfo">📞 +49 30 1234567</div>
+            <div class="kinfo">✉️ info@greenglanz.de</div>
+          </div>
+        </div>
+        <form class="kontakt-form reveal" id="kontaktForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Name *</label>
+              <input type="text" id="name" name="name" placeholder="Ihr vollständiger Name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">E-Mail *</label>
+              <input type="email" id="email" name="email" placeholder="ihre@email.de" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="telefon">Telefon</label>
+            <input type="tel" id="telefon" name="telefon" placeholder="+49 ..." />
+          </div>
+          <div class="form-group">
+            <label for="leistung">Gewünschte Leistung</label>
+            <select id="leistung" name="leistung">
+              <option value="">Bitte wählen…</option>
+              <option>Büroreinigung</option>
+              <option>Gebäudereinigung</option>
+              <option>Fensterreinigung</option>
+              <option>Unterhaltsreinigung</option>
+              <option>Sonderreinigung</option>
+              <option>Teppichreinigung</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="nachricht">Nachricht</label>
+            <textarea id="nachricht" name="nachricht" rows="4" placeholder="Beschreiben Sie kurz Ihr Vorhaben…"></textarea>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" id="datenschutz" name="datenschutz" required />
+            <label for="datenschutz">Ich habe die <a href="datenschutz.html">Datenschutzerklärung</a> gelesen und stimme zu. *</label>
+          </div>
+          <button type="submit" class="btn-primary btn-full">Angebot anfragen ✦</button>
+          <p class="form-note">* Pflichtfelder. Ihre Daten werden vertraulich behandelt.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="logo-text">✦ Greenglanz</span>
+        <p>Nachhaltige Reinigung.<br />Professionelle Qualität.</p>
+      </div>
+      <div class="footer-links">
+        <div class="fl-col">
+          <strong>Leistungen</strong>
+          <a href="#leistungen">Büroreinigung</a>
+          <a href="#leistungen">Gebäudereinigung</a>
+          <a href="#leistungen">Fensterreinigung</a>
+        </div>
+        <div class="fl-col">
+          <strong>Unternehmen</strong>
+          <a href="#nachhaltigkeit">Nachhaltigkeit</a>
+          <a href="#ueber-uns">Über uns</a>
+          <a href="#kontakt">Kontakt</a>
+        </div>
+        <div class="fl-col">
+          <strong>Rechtliches</strong>
+          <a href="impressum.html">Impressum</a>
+          <a href="datenschutz.html">Datenschutz</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Greenglanz Reinigungsservice GmbH. Alle Rechte vorbehalten.</span>
+      <span class="footer-eco">🌿 CO₂-neutraler Betrieb</span>
+    </div>
+  </footer>
+
+  <script>
+    // ── Data laden ──────────────────────────────────────────────
+    fetch('data.json')
+      .then(r => r.json())
+      .then(data => {
+        const grid = document.getElementById('servicesGrid');
+        data.leistungen.forEach((s, i) => {
+          grid.innerHTML += `
+            <div class="service-card reveal" style="animation-delay:${i * 0.1}s">
+              <div class="sc-icon">${s.icon}</div>
+              <h3>${s.titel}</h3>
+              <p>${s.beschreibung}</p>
+              <ul class="sc-features">${s.features.map(f => `<li>✓ ${f}</li>`).join('')}</ul>
+              <a href="#kontakt" class="sc-link">Anfrage →</a>
+            </div>`;
+        });
+        initReveal();
+      });
+
+    // ── Nav scroll ───────────────────────────────────────────────
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 60);
+    });
+
+    // ── Burger ───────────────────────────────────────────────────
+    document.getElementById('burger').addEventListener('click', () => {
+      document.getElementById('mobileMenu').classList.toggle('open');
+    });
+    document.querySelectorAll('.mobile-menu a').forEach(a => {
+      a.addEventListener('click', () => document.getElementById('mobileMenu').classList.remove('open'));
+    });
+
+    // ── Reveal on scroll ─────────────────────────────────────────
+    function initReveal() {
+      const obs = new IntersectionObserver((entries) => {
+        entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
+      }, { threshold: 0.12 });
+      document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+    }
+    initReveal();
+
+    // ── Counter animation ────────────────────────────────────────
+    const counterObs = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          const target = parseInt(e.target.dataset.target);
+          let count = 0;
+          const inc = target / 60;
+          const timer = setInterval(() => {
+            count += inc;
+            if (count >= target) { count = target; clearInterval(timer); }
+            e.target.textContent = Math.floor(count);
+          }, 25);
+          counterObs.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.5 });
+    document.querySelectorAll('.stat-num').forEach(el => counterObs.observe(el));
+
+    // ── Particle canvas ──────────────────────────────────────────
+    const canvas = document.getElementById('particles');
+    const ctx = canvas.getContext('2d');
+    let W, H, particles = [];
+    function resize() { W = canvas.width = window.innerWidth; H = canvas.height = window.innerHeight; }
+    resize();
+    window.addEventListener('resize', resize);
+    for (let i = 0; i < 55; i++) {
+      particles.push({ x: Math.random() * 1920, y: Math.random() * 1080, r: Math.random() * 2 + 0.5, vx: (Math.random() - 0.5) * 0.3, vy: (Math.random() - 0.5) * 0.3, o: Math.random() * 0.5 + 0.1 });
+    }
+    function drawParticles() {
+      ctx.clearRect(0, 0, W, H);
+      particles.forEach(p => {
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(134,193,110,${p.o})`;
+        ctx.fill();
+        p.x += p.vx; p.y += p.vy;
+        if (p.x < 0) p.x = W; if (p.x > W) p.x = 0;
+        if (p.y < 0) p.y = H; if (p.y > H) p.y = 0;
+      });
+      requestAnimationFrame(drawParticles);
+    }
+    drawParticles();
+
+    // ── Form submit ──────────────────────────────────────────────
+    document.getElementById('kontaktForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const btn = this.querySelector('button[type=submit]');
+      btn.textContent = '✓ Nachricht gesendet!';
+      btn.style.background = '#2d7a1f';
+      setTimeout(() => { btn.textContent = 'Angebot anfragen ✦'; btn.style.background = ''; this.reset(); }, 3000);
+    });
+  </script>
+
+</body>
+</html>
